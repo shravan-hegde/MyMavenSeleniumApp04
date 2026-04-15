@@ -20,6 +20,7 @@ public class App {
         // ✅ Headless mode (recommended in VM, remove if you want UI)
         FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
+        options.setBinary("/usr/bin/firefox");
 
         WebDriver driver = new FirefoxDriver(options);
 
